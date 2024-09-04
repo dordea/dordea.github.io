@@ -1,2 +1,5 @@
-# dordea
- 
+- 👋 Hi, I’m @dordea
+- 👀 I’m interested in coding / hack's / webdev
+- 🌱 I’m currently learning python
+- 📫 How to reach me pavlik@duck.com
+- 🌐 My web Portofolio www.dordea.codes

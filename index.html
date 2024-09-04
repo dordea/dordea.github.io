@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="static/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dordea Pavel</title> 
+</head>
+<body>
+<div class="world-map"></div>
+<div class="video-background">
+      <video autoplay="" muted="" loop="">
+        <source src="static/img/background.webm" type="video/webm">
+      </video>
+    </div>
+
+
+<!-- Fereastră modală -->
+<div class="modal card" id="welcomeModal" tabindex="-1" role="dialog">
+
+    <div class="modal-dialog modal-dialog" id="terminal" role="document">
+        <div class="modal-content card ">
+            <div class="modal-header card-header">
+                <h5 class="modal-title">TERMINAL</h5>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>-->
+                </button>
+            </div>
+            <div class="modal-body card-body">
+                <p class="typing-animation" id="typingText1"></p>
+                <p class="typing-animation" id="typingText2"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cards-container loaded" id="loaded" style="visibility: none;">
+<!--Profile-->
+            <div class="modal-body  card-body">
+                <div class="card profile modal-dialog" id="profile" style="width: 280px; top: 50px; left: 25px; z-index: 11;" tabindex="0" data-card="profile">
+                    <div class="modal-header card-header">
+                        <div class="card-title">
+                            <h2>Profile</h2>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="profile-image"><img src="static/img/selfie.png" alt="Dordea Pavel"></div>
+                <div class="profile-info">
+                    <table>
+                        <tbody>
+                            <tr><td>Name</td><td>Pavel Dordea</td></tr>
+                            <tr><td>Profession</td><td>Full Stack Developer</td></tr>
+                            <tr><td>Sex</td><td>Male</td></tr>
+                            <tr><td>Resume</td><td><a href="static/docs/resume/2024.pdf" download="">Download Resume</a></td></tr>
+                            <tr><td>Portfolio</td><td><a href="/" target="_blank">View Now</a></td></tr>
+                            <tr>
+                    <td>Contact</td>
+                    <td>
+                      <a href="mailto:nikstone9@gmail.com"><i class="fas fa-envelope"></i></a>
+                      <a href="https://github.com/crazynews" target="_blank"><i class="fab fa-github"></i></a>
+                      <a href="https://dordea.t.me/" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </td>
+                  </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    </div>
+                </div>
+    <!--Face captured-->
+    <div class="card modal-dialog face-capture" id="face" style="width: 500px; top: 93px; left: 314px; z-index: 16;" tabindex="0" data-card="face-capture">
+        <div class="card-header modal-header">
+            <div class="card-title">
+                <h2>Face Capture</h2>
+            </div>
+            <div class="card-actions">
+                <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="face-capture-image">
+        <img src="static/img/face-capture.JPG" alt="Bryan Smith Facial Recognition">
+        <div class="face-capture-square"></div>
+    </div>
+    <div class="profile-info">
+        <table>
+            <tbody>
+                <tr><td>Camera</td><td>RA717</td></tr>
+                <tr><td>Match</td><td>99%</td></tr>
+                <tr><td>Location</td><td>[47.743154, 28.96196]</td></tr>
+            </tbody>
+        </table>
+    </div>
+        </div>
+    </div>
+
+    <!--Location-->
+    <div class="card modal-dialog location" id="location" style="width: 200px; top: 456px; left: 116px; z-index: 2;" tabindex="0" data-card="location">
+        <div class="card-header modal-header">
+            <div class="card-title">
+                <h2>Location</h2>
+            </div>
+            <div class="card-actions">
+                <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-body">
+            
+        <div class="moldova-map-wrap">
+            <img class="moldova-map" src="static/img/moldova-map.svg" alt="Finland Map">
+            <div class="beacon-wrap">
+                <div class="beacon-center"></div>
+                <div class="beacon"></div>
+            </div>
+        </div>
+    
+        </div>
+    </div>
+<!--Associates-->
+<div class="card known-associates modal-dialog" id="associates" style="width: 240px; top: 145px; left: 1005px; z-index: 49;" tabindex="0" data-card="known-associates">
+    <div class="card-header modal-header">
+        <div class="card-title">
+            <h2>Known Associates</h2>
+        </div>
+        <div class="card-actions">
+            <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="profile-image"><img src="static/img/my-cat.jpg" width="100%" alt="Tom"></div>
+<div class="profile-info">
+    <table>
+        <tbody>
+            <tr><td>Name</td><td>Elizabeth</td></tr>
+            <tr><td>Alias</td><td>Liza</td></tr>
+            <tr><td>Profession</td><td>Friend</td></tr>
+            <tr><td>Sex</td><td>Female</td></tr>
+            <tr><td>Age</td><td>0.6</td></tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+</div>
+<!--Languages-->
+<div class="card languages modal-dialog" id="languages" style="width: 250px; top: 374px; left: 846px; z-index: 9;" tabindex="0" data-card="languages">
+    <div class="card-header modal-header">
+        <div class="card-title">
+            <h2>Languages</h2>
+        </div>
+        <div class="card-actions">
+            <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table>
+    <tbody>
+        <tr><td width="50%">HTML</td><td>Python</td></tr>
+        <tr><td width="50%">CSS</td><td>PHP</td></tr>
+<tr><td>JavaScript</td><td>C</td></tr>
+        <tr><td>Java</td><td>SQL</td></tr>
+    </tbody>
+</table>
+    </div>
+</div>
+<!--Trainings-->
+<div class="card training modal-dialog" id="training" style="width: 480px; top: 253px; left: 690px; z-index: 97;" tabindex="0" data-card="training">
+    <div class="card-header modal-header">
+        <div class="card-title">
+            <h2>Training</h2>
+        </div>
+        <div class="card-actions">
+            <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table>
+    <tbody>
+        <tr>
+  <td>Tiraspol State University</td>
+  <td>2019-2022</td>
+  <td>IT</td>
+</tr>
+<tr>
+    <td>Ion Creangă State Pedagogical University</td>
+    <td>2022-2024</td>
+    <td>IT</td>
+  </tr>
+    </tbody>
+</table>
+    </div>
+</div>
+<!--Missions-->
+<div class="card modal-dialog" id="missions" style="width: 560px; top: 60px; left: 660px; z-index: 98;" tabindex="0" data-card="missions">
+    <div class="card-header modal-header" >
+        <div class="card-title">
+            <h2>Missions</h2>
+        </div>
+        <div class="card-actions">
+            <a href="#" class="move-card" tabindex="-1"><i class="fa fa-arrows-alt"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+    <table>
+        <tbody>
+            <tr><td><a target="_blank" href="https://drive.google.com/file/d/1r6xFOCo1sktsLT1K3koRZePyyfcYK-tq/view?usp=drive_link"><i class="fa fa-download"></i> DocsTool</a></td><td>Moldova,Chișinău</td><td>2022</td><td><a href="https://github.com/crazynews/DocsTool" target="_blank"><i class="fab fa-github"></i></a></td></tr>
+            <tr><td><a target="_blank" href="https://drive.google.com/file/d/1qJse7Peir00lg9QTCT1s6_STgN-MBWwT/view?usp=drive_link"><i class="fa fa-download"></i> Cryptor</a></td><td>Moldova,Chișinău</td><td>2022</td><td><a href="https://github.com/crazynews/Cryptor" target="_blank"><i class="fab fa-github"></i></a></td></tr>
+            <tr><td><a target="_blank" href="https://tidetime.works"><i class="fab fa-chrome"></i> TideTime</a></td><td>Moldova,Chișinău</td><td>2024</td><td><a href="https://github.com/crazynews/" target="_blank"><i class="fab fa-github"></i></a></td></tr>
+        </tbody>
+    </table>
+
+    </div>
+</div>
+</div>
+</div>
+<script src="static/jquery-1.10.2.js"></script>
+<script src="static/jquery-ui.js"></script>
+<script src="static/bootstrap.min.js"></script>
+<script src="static/scripts.js"></script>
+</body>
+</html>

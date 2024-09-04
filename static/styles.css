@@ -1,0 +1,342 @@
+body {
+  background: white;
+  color: #fff;
+  font-family: "Exo 2";
+  overflow-x: hidden;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+  }
+.video-background video {
+  height: 100%;
+}
+.world-map {
+  background: url("img/bg-1.jpg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.modal-content {
+ background-color: #333;
+ color: #fff;
+ /*border-radius: 10px;*/
+ cursor: move;
+}
+.modal-header {
+ border-bottom: none;
+}
+ .modal-footer {
+  border-top: none;
+}
+ .typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  /*margin: 0 auto;*/
+  letter-spacing: 2px;
+  text-align: left;
+}
+.cards-container .card-header {
+  cursor: move;
+}
+.card {
+  opacity: 0.95;
+  border: 2px solid #67b6b9;
+  box-shadow: 0 0 30px #000;
+}
+.terminal, .send-message {
+  max-width: calc(100% - 30px);
+  width: 450px;
+  margin: 0 auto;
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  top: 20%;
+  z-index: 1000;
+}
+.terminal .card-header {
+  text-transform: uppercase;
+}
+.card .card-header {
+  background: #0c2b35;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  color: #67b6b9;
+  padding: 4px 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #101b22;
+}
+.cards-container .card-header {
+  cursor: move;
+}
+.card .card-header {
+  color: #67b6b9;
+  font-weight: bold;
+}
+.card .card-body {
+  display: grid;
+  background: #0c2b35;
+  position: relative;
+}
+.terminal .card-body {
+  display: block !important;
+  min-height: 200px;
+  padding: 15px;
+  text-transform: initial !important;
+}
+
+.slick-terminal-line {
+  position: relative;
+  overflow: auto;
+  margin-bottom: 2px;
+}
+.slick-terminal-caret {
+  vertical-align: middle;
+  color: #fff;
+  margin-right: 10px;
+}
+.slick-terminal-text {
+  vertical-align: middle;
+  color: #fff;
+}
+.terminal .card-body {
+  text-transform: initial !important;
+}
+.slick-terminal-blink {
+  animation-name: blink;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+.slick-terminal-cursor {
+  vertical-align: middle;
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #fff;
+  opacity: 1;
+}
+.cards-container.loaded {
+  opacity: 1;
+}
+.cards-container {
+  width: 1600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+.cards-container .card {
+  max-width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+}
+.profile {
+  top: 10%;
+  left: 10%;
+}
+.card .card-header h2 {
+  font-size: 14px;
+  margin: 0;
+}
+.card .card-body {
+  display: grid;
+  background: #0c2b35;
+  position: relative;
+}
+.card img {
+  filter: grayscale(60%) brightness(1.2) contrast(1.2);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.card table td {
+  border: 1px solid #444;
+  padding: 5px;
+  vertical-align: top;
+}
+a {
+  color: #67b6b9;
+}
+a:hover {
+  color: #fff;
+}
+.card .card-header .card-actions {
+  text-align: right;
+}
+.moldova-map-wrap {
+  position: relative;
+}
+.moldova-map-wrap .moldova-map {
+  opacity: 0.5;
+  display: block;
+}
+.card img {
+  filter: grayscale(60%) brightness(1.2) contrast(1.2);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.moldova-map-wrap .beacon-wrap {
+  position: absolute;
+  top: 28%;
+  left: 63%;
+  width: 100px;
+  height: 100px;
+  transform: translateY(-50%) translateX(-50%);
+}
+.moldova-map-wrap .beacon-center {
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 50%;
+}
+.moldova-map-wrap .beacon {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: ping 3s infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+@keyframes ping {
+  0% {
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+.languages {
+  top: 70%;
+  left: 80%;
+}
+
+.profile {
+  top: 10%;
+  left: 10%;
+}
+
+.face-capture {
+  top: 5%;
+  left: 50%;
+}
+
+.face-capture-image {
+  position: relative;
+}
+
+.face-capture-image .face-capture-square {
+  position: absolute;
+  border: 3px solid red;
+  opacity: 0.5;
+  height: 0;
+  width: 5%;
+  padding-bottom: 5%;
+  z-index: 1;
+  top: 40%;
+  left: 51%;
+}
+
+.known-associates {
+  top: 20%;
+  left: 20%;
+}
+
+.training {
+  top: 50%;
+  left: 50%;
+}
+
+.languages {
+  top: 70%;
+  left: 80%;
+}
+
+.skillset {
+  top: 60%;
+  left: 50%;
+}
+
+.location {
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (max-width: 760px) {
+  #loaded{
+    position: relative !important;
+    overflow-y: scroll; /* Adăugați overflow-y pentru a permite derularea conținutului */
+    height: calc(100vh - 25px); 
+  }
+
+  #terminal {
+    font-size: 7px !important;
+    top:10px !important;
+    width: 92vw !important;
+  }
+
+  #profile,
+  #location,
+  #associates,
+  #languages,
+  #training,
+  #face {
+    font-size: 10px !important;
+    top: 10px !important;
+    left: -3vw !important;
+    width: calc(100vw + 6vw) !important; /* Adaugăm 6vw pentru a compensa decalajul */
+    display: block !important;
+    pointer-events: none !important;
+    position: relative !important; /* Asigurați-vă că elementele sunt poziționate relativ */
+  }
+  a{
+    pointer-events: auto !important;
+  }
+  #missions{
+    font-size: 10px !important;
+    top: 10px !important;
+    left: -3vw !important;
+    width: calc(100vw + 6vw) !important; /* Adaugăm 6vw pentru a compensa decalajul */
+    display: block !important;
+    pointer-events: none !important;
+    position: relative !important;
+  }
+}
+
